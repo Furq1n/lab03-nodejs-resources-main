@@ -1,0 +1,47 @@
+<%- include('header'); -%>
+<div class="content">
+<h1>Product Details</h1>
+    <table id="catalog">
+        <tr>
+            <td>
+                Product Name
+            </td>
+            <td>
+                <%= product.name %>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Product Price
+            </td>
+            <td>
+                <%= product.price %>AED
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Product Vat
+            </td>
+            <td>
+                <%= product.vat %>AED
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Product Stock
+            </td>
+            <td>
+                <%= product.stock %>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Critical Stock
+            </td>
+            <td>
+                <%= product.critical_stock %>
+            </td>
+        </tr>
+    </table>
+</div>
+    <%- include('footer'); -%>
